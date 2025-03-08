@@ -1,0 +1,94 @@
+.card {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans JP", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "MS UI Gothic", sans-serif;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* If you want less spacing everywhere
+body {
+  margin: 0px;
+  padding: 0px;
+}
+*/
+
+.replay-button svg {
+    width: 35px;
+    height: 35px;
+}
+
+.front .sentence {
+    font-size: 36px;
+}
+
+.front .words {
+    font-size: 42px;
+}
+
+.back .sentence {
+    font-size: 36px;
+}
+
+.back .translation {
+    font-size: 22px;
+}
+
+.back .content {
+    text-align: left;
+    margin-left: 5%;
+}
+
+.back .target-word {
+    font-size: 36px;
+}
+
+.back .content .definitions {
+    font-size: 22px;
+    word-break: break-word;
+}
+
+.back .content .notes {
+    font-size: 20px;
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+.back .content .context {
+    font-style: italic;
+    font-size: 20px;
+}
+
+img {
+    max-width: 60vw;
+}
+
+.mobile img {
+    max-width: 60vw;
+}
+
+/* This part defines the bold colors. */
+b {
+    font-weight: normal;
+    color: #3971c6;
+}
+
+/*.nightMode .front b {
+    font-weight: normal;
+    color: #ffb3b3;
+}*/
+
+.nightMode .front b {
+    font-weight: normal;
+    color: #5586cd;
+}
+
+.back .content .notes b {
+    font-weight: bold;
+}
+
+.back .content .context b {
+    font-weight: bold;
+}

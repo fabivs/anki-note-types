@@ -1,0 +1,26 @@
+<div class="front" lang="ja">
+    {{^isVocabOnly}}
+    {{#Sentence}}
+    <div class="sentence">{{Sentence}}</div>
+  
+    <div class="words" style="margin-top:25px;">
+        <b>{{Target word 1}}</b>
+  
+        {{#Target word 2}}
+        , <b>{{Target word 2}}</b>
+        {{/Target word 2}}
+  
+        {{#Target word 3}}
+        , <b> {{Target word 3}}</b>
+        {{/Target word 3}}
+    </div>
+    {{/Sentence}}
+    {{/isVocabOnly}}
+  
+    {{#isVocabOnly}}
+    <div class="words" style="margin-top:20px">
+        <b>{{Target word 1}}</b>
+    </div>
+    {{/isVocabOnly}}
+  
+  </div>

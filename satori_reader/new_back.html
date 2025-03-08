@@ -1,0 +1,78 @@
+<div style="font-size: 48px; margin-bottom:8px;">{{furigana:Expression-ReadingsInline}}</div>
+
+<div style="font-size: 28px; ">{{Word Pitch Accent}} {{Word Audio}}</div><br>
+
+<div style="font-size: 28px; ">
+{{English}} 
+{{#PartsOfSpeech}}
+[<span id="pos">{{PartsOfSpeech}}</span>]</div><br>
+{{/PartsOfSpeech}}
+
+<hr>
+
+{{#Context1}}
+<div style="font-size: 26px; ">{{furigana:Context1-PerYourPreferencesReadingsInline}}</div>
+<br>
+<div style="font-size: 20px; ">{{Context1-Translation}}</div>
+<br>
+<br>
+{{/Context1}}
+{{#Context2}}
+<div style="font-size: 20px; ">{{furigana:Context2-PerYourPreferencesReadingsInline}}</div>
+<br>
+<div style="font-size: 20px; ">{{Context2-Translation}}</div>
+<br>
+<br>
+{{/Context2}}
+{{#Context3}}
+<div style="font-size: 20px; ">{{furigana:Context3-PerYourPreferencesReadingsInline}}</div>
+<br>
+<div style="font-size: 20px; ">{{Context3-Translation}}</div>
+<br>
+<br>
+{{/Context3}}
+
+{{#Notes}}
+<div class='notes' style='font-size:20px;'>
+	{{Notes}}
+</div>
+{{/Notes}}
+
+<div class='footer'>
+    <div style='margin-top:8px;'>
+        <a href="https://jisho.org/search/{{Expression}}">Jisho</a>
+    </div>
+</div>
+
+<script>
+    (function() {
+        // Define the mapping
+        const posMap = {
+            "v1": "ichidan verb",
+							"v5b": "godan verb",
+							"v5r": "godan verb",
+            "n": "noun",
+            "vs": "suru verb",
+            "exp": "expression",
+            "suf": "suffix",
+            "n-adv": "adverbial noun",
+            "n-t": "temporal noun",
+            "adj-no": "no-adj.",
+            "adj-na": "na-adj.",
+					"vi": "intransitive"
+        };
+
+        // Get the PartsOfSpeech element
+        const posElement = document.getElementById('pos');
+
+        if (posElement) {
+            // Split the content by semicolons and map to readable values
+            const originalText = posElement.textContent;
+            const parts = originalText.split(';').map(item => item.trim());
+            const translatedParts = parts.map(part => posMap[part] || part);
+
+            // Replace the content with the translated text
+            posElement.textContent = translatedParts.join(', ');
+        }
+    })();
+</script>
