@@ -90,6 +90,11 @@ img {
     color: #3971c6;
 }
 
+.front b {
+    font-weight: normal;
+    color: #3971c6;
+}
+
 /*.nightMode .front t {
     font-weight: normal;
     color: #ffb3b3;
