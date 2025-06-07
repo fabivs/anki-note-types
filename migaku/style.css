@@ -105,6 +105,11 @@ img {
     color: #5586cd;
 }
 
+.nightMode .front b {
+    font-weight: normal;
+    color: #5586cd;
+}
+
 t {
     font-weight: bold;
 }
