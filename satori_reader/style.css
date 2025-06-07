@@ -1,0 +1,42 @@
+.card {
+  font-family: arial;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.footer {
+  width: fit-content;
+	margin: auto;
+  margin-top: 50px;
+  border-top: 1px solid silver;
+  font-size: 0.8em;
+}
+
+hr {
+	margin-top: 26px;
+	margin-bottom: 26px;
+}
+
+.notes {
+    display: inline-block;
+    padding: 4px 8px 4px 8px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 1px;
+    border-radius: 4px;
+}
+
+img {
+max-width: 80vw;
+}
+
+.mobile img {
+max-width: 80vw;
+}
+
+.replay-button svg {
+    width: 35px;
+    height: 35px;
+}
