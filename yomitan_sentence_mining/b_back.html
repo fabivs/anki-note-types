@@ -1,84 +1,84 @@
 <div class="back" lang="ja">
-    {{^isVocabOnly}}
-        {{#Sentence}}
-        <div class="sentence">
-            {{Sentence Furigana}}
-        </div>
-        {{/Sentence}}
-    {{/isVocabOnly}}
-    {{#isVocabOnly}}
-        <div class="target-word">
-            {{Target word 1}}
-        </div>
-    {{/isVocabOnly}}
+		{{^isVocabOnly}}
+			{{#Sentence}}
+			<div class="sentence">
+				{{Sentence Furigana}}
+			</div>
+			{{/Sentence}}
+		{{/isVocabOnly}}
+		{{#isVocabOnly}}
+			<div class="target-word">
+				{{Target word 1}}
+			</div>
+		{{/isVocabOnly}}
 {{^isVocabOnly}}
-{{#Sentence Meaning}}
-<div class="translation" style='margin-bottom:10px'>
-    {{Sentence Meaning}}
-</div>
-{{/Sentence Meaning}}
+	{{#Sentence Meaning}}
+	<div class="translation" style='margin-bottom:10px'>
+		{{Sentence Meaning}}
+	</div>
+	{{/Sentence Meaning}}
 {{/isVocabOnly}}
 
 <hr>
 
 <div class="content">
-{{#Context}}
-<div class="context" style='margin-bottom:10px;'>
-    {{Context}}
-</div>
-{{/Context}}
+	{{#Context}}
+	<div class="context" style='margin-bottom:10px;'>
+		{{Context}}
+	</div>
+	{{/Context}}
 
-{{^isVocabOnly}}
-<div class="target-word" style="margin-bottom:4px;">
-    <b>{{Target word 1}}</b>
+	{{^isVocabOnly}}
+	<div class="target-word" style="margin-bottom:4px;">
+		<b>{{Target word 1}}</b>
 
-    {{#Target word 2}}
-    , <b>{{Target word 2}}</b>
-    {{/Target word 2}}
+		{{#Target word 2}}
+		, <b>{{Target word 2}}</b>
+		{{/Target word 2}}
 
-    {{#Target word 3}}
-    , <b> {{Target word 3}}</b>
-    {{/Target word 3}}
-</div>
-{{/isVocabOnly}}
+		{{#Target word 3}}
+		, <b> {{Target word 3}}</b>
+		{{/Target word 3}}
+	</div>
+	{{/isVocabOnly}}
 
-<div class="definitions" style='margin-top:16px;'>
-    {{#Reading 1}}{{Reading 1}}{{/Reading 1}}【{{Target word 1}}】{{#Pitch Accent 1}} ー {{Pitch Accent 1}}{{/Pitch Accent 1}}
-    <br>{{Definitions 1}}
-</div>
-    
-{{^isVocabOnly}}
-{{#Sentence}}
-{{#Target word 2}}
-<div class="definitions" style='margin-top:16px;'>
-    {{#Reading 2}}{{Reading 2}}{{/Reading 2}}【{{Target word 2}}】{{#Pitch Accent 2}} ー {{Pitch Accent 2}}{{/Pitch Accent 2}}
-    <br>{{Definitions 2}}
-</div>
-{{/Target word 2}}
+	<div class="definitions" style='margin-top:16px;'>
+		{{#Reading 1}}{{Reading 1}}{{/Reading 1}}【{{Target word 1}}】{{#Pitch Accent 1}} ー {{Pitch Accent 1}}{{/Pitch Accent 1}}
+		<br>{{Definitions 1}}
+	</div>
+		
+	{{^isVocabOnly}}
+	{{#Sentence}}
+	{{#Target word 2}}
+	<div class="definitions" style='margin-top:16px;'>
+		{{#Reading 2}}{{Reading 2}}{{/Reading 2}}【{{Target word 2}}】{{#Pitch Accent 2}} ー {{Pitch Accent 2}}{{/Pitch Accent 2}}
+		<br>{{Definitions 2}}
+	</div>
+	{{/Target word 2}}
 
-{{#Target word 3}}
-<div class="definitions" style='margin-top:16px;'>
-    {{#Reading 3}}{{Reading 3}}{{/Reading 3}}【{{Target word 3}}】{{#Pitch Accent 3}} ー {{Pitch Accent 3}}{{/Pitch Accent 3}}
-    <br>{{Definitions 3}}
-</div>
-{{/Target word 3}}
-{{/Sentence}}
-{{/isVocabOnly}}
+	{{#Target word 3}}
+	<div class="definitions" style='margin-top:16px;'>
+		{{#Reading 3}}{{Reading 3}}{{/Reading 3}}【{{Target word 3}}】{{#Pitch Accent 3}} ー {{Pitch Accent 3}}{{/Pitch Accent 3}}
+		<br>{{Definitions 3}}
+	</div>
+	{{/Target word 3}}
+	{{/Sentence}}
+	{{/isVocabOnly}}
 
-{{#Notes}}
-<div class='notes' style='margin-top:24px; margin-bottom: 16px;'>
-    {{Notes}}
-</div>
-{{/Notes}}
+	{{#Notes}}
+	<div class='notes' style='margin-top:24px; margin-bottom: 16px;'>
+		{{Notes}}
+	</div>
+	{{/Notes}}
 </div>
 
 {{#Screenshot}}
 <div style='margin-top:16px;'>
-{{Screenshot}}
+	{{Screenshot}}
 </div>
 {{/Screenshot}}
 
 <div>
-{{Audio}}
+	{{Audio}}
 </div>
 </div>
