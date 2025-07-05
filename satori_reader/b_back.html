@@ -1,20 +1,19 @@
-<div style="font-size: 48px; margin-bottom:8px;">{{furigana:Expression-ReadingsInline}}</div>
+<div lang="ja">
+<div style="font-size: 42px; margin-bottom:8px;">{{furigana:Expression-ReadingsInline}}</div>
 
-{{#Context1}}
-<div style="font-size: 26px; ">{{furigana:Context1-PerYourPreferencesReadingsInline}}</div>
-{{/Context1}}
+<div style="font-size: 26px; ">{{Word Pitch Accent}} {{Word Audio}}</div><br>
 
-<hr>
-
-<div style="font-size: 28px; ">{{Word Pitch Accent}} {{Word Audio}}</div><br>
-
-<div style="font-size: 28px; ">
+<div style="font-size: 26px; ">
 {{English}} 
 {{#PartsOfSpeech}}
 [<span id="pos">{{PartsOfSpeech}}</span>]</div><br>
 {{/PartsOfSpeech}}
 
+<hr>
+
 {{#Context1}}
+<div style="font-size: 26px; ">{{furigana:Context1-PerYourPreferencesReadingsInline}}</div>
+<br>
 <div style="font-size: 20px; ">{{Context1-Translation}}</div>
 <br>
 <br>
@@ -45,6 +44,7 @@
         <a href="https://jisho.org/search/{{Expression}}">Jisho</a>
     </div>
 </div>
+</div>
 
 <script>
     (function() {
@@ -53,6 +53,8 @@
             "v1": "ichidan verb",
 							"v5b": "godan verb",
 							"v5r": "godan verb",
+							"v5u": "godab verb",
+							"vt": "transitive",
             "n": "noun",
             "vs": "suru verb",
             "exp": "expression",
