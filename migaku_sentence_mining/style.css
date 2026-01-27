@@ -97,6 +97,11 @@ img {
     color: #3971c6;
 }
 
+.front strong {
+    font-weight: normal;
+    color: #3971c6;
+}
+
 /*.nightMode .front t {
     font-weight: normal;
     color: #ffb3b3;
@@ -112,12 +117,16 @@ img {
     color: #5586cd;
 }
 
+.nightMode .front strong {
+    font-weight: normal;
+    color: #5586cd;
+}
+
 t {
     font-weight: bold;
 }
 
-/*###MIGAKU JAPANESE SUPPORT CSS STARTS###*/
-.word {
+/*###MIGAKU JAPANESE SUPPORT CSS STARTS###*/.word {
     position: relative;
 }
 
@@ -434,8 +443,7 @@ t {
 }
 
 
-ruby>rt {
+ruby > rt {
     user-select: none;
 }
-
 /*###MIGAKU JAPANESE SUPPORT CSS ENDS###*/
