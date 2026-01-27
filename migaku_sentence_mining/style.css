@@ -2,9 +2,6 @@
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Noto Sans JP", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "MS UI Gothic", sans-serif;
     font-size: 44px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* If you want less spacing everywhere
@@ -38,8 +35,7 @@ body {
 
 .back .content {
     text-align: left;
-    margin-left: 2%;
-	margin-right: 2%;
+    margin-left: 5%;
 }
 
 .back .target-word {
